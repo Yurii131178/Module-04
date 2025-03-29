@@ -1,0 +1,398 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+p {
+  font-size: 16px;
+}
+h1 {
+  background-color: #a2ffc1;
+}
+h2 {
+  background-color: #8fd4ff;
+}
+
+input,
+textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+textarea::placeholder {
+  resize: none;
+  color: tomato;
+}
+textarea:hover::placeholder {
+  color: blueviolet;
+}
+
+input {
+  border: 3px solid tomato;
+  border-radius: 5px;
+}
+
+input:placeholder-shown {
+  border: 3px solid blueviolet;
+}
+
+input::placeholder {
+  color: teal;
+}
+input:hover::placeholder {
+  color: rgb(255, 6, 114);
+}
+
+p {
+  font-size: large;
+}
+
+input:placeholder-shown {
+  border-color: blue;
+}
+.triple {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.A {
+  border: 3px solid orange;
+}
+.B {
+  border: 3px dashed violet;
+}
+
+.C {
+  border: 3px dotted rgb(7, 241, 113);
+}
+
+.C:placeholder-shown {
+  border-color: rgb(248, 3, 101);
+}
+/* =========================================== */
+.form1:focus-within {
+  border-color: #2196f3;
+}
+
+.form1-label:focus-within {
+  color: #2196f3;
+}
+
+/* Example styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.form1 {
+  width: 100%;
+  padding: 24px;
+  border-radius: 4px;
+  border: 2px dashed #2a2a2a;
+}
+
+.form1-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.label-text {
+  margin-bottom: 4px;
+}
+
+.form1-input {
+  padding: 8px;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  display: inline-flex;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #1976d2;
+}
+/* ====================================== */
+.form2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid #212121;
+  max-width: 300px;
+}
+
+.form2-button {
+  align-self: flex-start;
+}
+
+.form2-input {
+  padding: 4px;
+  color: #212121;
+  border: 1px solid #212121;
+  border-radius: 4px;
+}
+
+.form2-input::placeholder {
+  color: #616161;
+}
+
+.form2-label {
+  display: flex;
+  flex-direction: column;
+  transition: color 150ms ease-in-out;
+}
+
+.form2-label:focus-within {
+  color: #009688;
+}
+/* ================ */
+
+label3 {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 20px;
+  color: rgb(248, 3, 101);
+}
+
+select {
+  font-size: 20px;
+  color: #2196f3;
+}
+/* ============================== */
+
+.form4 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid #212121;
+  max-width: 300px;
+}
+
+.form4-button {
+  align-self: flex-start;
+}
+
+.form4-input {
+  padding: 4px;
+  color: #212121;
+  border: 1px solid #212121;
+  border-radius: 4px;
+}
+
+.form4-input::placeholder {
+  color: #616161;
+}
+
+.form4-label {
+  display: flex;
+  flex-direction: column;
+  transition: color 150ms ease-in-out;
+}
+
+.form4-label:focus-within {
+  color: #009688;
+}
+.optgroup {
+  font-size: 20px;
+  color: blue;
+}
+/* ======================== */
+
+.quiz-form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.checkbox-label {
+  flex-direction: row;
+}
+.checkbox-contatiner {
+  display: inline-flex;
+  gap: 10px;
+}
+/* ==========Псевдоклас :checked======================= */
+.form-input:checked {
+  outline: 2px solid #f32164;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 2px rgb(94, 218, 49);
+}
+
+/* Example styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-caption {
+  margin: 0;
+  font-weight: 700;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+/* Селектор атрибута "[]" // selector[attribute_name="..."] */
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+}
+
+.quiz-form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.quiz-form p {
+  margin: 0;
+}
+
+.quiz-form input {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.quiz-form input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 2px orange;
+}
+/* Селектор X + Y */
+input[type="checkbox"]:checked + label {
+  color: rgb(245, 4, 4);
+}
+
+/* >Обов'язкові поля */
+
+/* =====>Атрибут disabled===== */
+button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+/* codepen :disabled */
+.btn {
+  display: inline-flex;
+  padding: 12px 24px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: orange;
+}
+
+.btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+/* Example styles */
+* {
+  box-sizing: border-box;
+}
+/* Групування полів */
+.bold {
+  font-weight: bold;
+  color: #f32164;
+}
+/* =============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.group-title {
+  width: 100%;
+  font-weight: 700;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+input {
+  padding: 4px;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
